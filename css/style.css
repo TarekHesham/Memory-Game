@@ -1,0 +1,130 @@
+/* Elements */
+body {
+  background-color: #23272a;
+  font-family: system-ui;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+h1 {
+  color: white;
+  background-color: #7289da;
+  width: max-content;
+  display: inline-block;
+  border: 5px solid #7289da;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: white 0 3px 0;
+  user-select: none;
+}
+
+/* Input */
+input {
+  border: 10px solid #7289da;
+  border-radius: 15px;
+  background-color: #7289da;
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+  width: 7em;
+  font-size: 1em;
+}
+input#stop:hover {
+  border: 10px solid #f84d4d;
+  box-shadow: #f84d4d 0 0 5px, #fe5a5a 0 0 5px;
+  background-color: #f84d4d;
+}
+input#start:hover {
+  border: 10px solid #1dc341;
+  background-color: #1dc341;
+  box-shadow: #31ff5d 0 0 5px, #52ff77 0 0 10px;
+}
+
+/* Dashboard */
+div#dashboard {
+  text-align: center;
+  position: relative;
+}
+
+/* Gameboard */
+div#gameboard {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  /* flex-direction: row; */
+  max-width: 27em;
+  justify-content: center;
+  flex-flow: wrap;
+}
+div#gameboard > img {
+  border: 5px solid #7289da;
+  border-radius: 15px;
+  width: 5.5em;
+  margin: 0.2em;
+  cursor: not-allowed;
+  /* border-style: ridge; */
+  border-style: outset;
+  transition-duration: 0.5s;
+}
+
+/* Win popup */
+div#win {
+  display: none;
+}
+div#win > img {
+  position: absolute;
+  top: 1em;
+  right: 30%;
+}
+div#win span#alert {
+  font-size: 40px;
+  background-color: #ffe451;
+  color: #ffffff;
+  border-radius: 10px;
+  border-bottom: inset #a78125;
+  padding: 10px;
+  position: absolute;
+  width: 11em;
+  right: -15px;
+  box-shadow: 0 0 30px #a19760, 0 0 30px #ffd700;
+  top: 5em;
+  text-shadow: -1px 0px 3px black;
+}
+#soundSystem {
+  display: none;
+}
+
+/* Score */
+#score img#gold,
+img#timerIcon {
+  max-width: 2em;
+  padding: 7px;
+  padding-left: 10px;
+}
+#score span#count,
+#score span#timer {
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+  padding-left: 0;
+  padding-right: 10px;
+}
+div#score {
+  display: flex;
+  top: 2.5vw;
+  position: absolute;
+  right: 3vw;
+  background-color: rgb(1 1 1 / 23%);
+  align-items: center;
+  flex-wrap: nowrap;
+  border-radius: 10px;
+}
+#score span#line {
+  width: 0.2em;
+  height: 2em;
+  background-color: white;
+  border-radius: 15px;
+}

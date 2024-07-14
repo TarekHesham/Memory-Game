@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon" />
+    <script defer src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Score -->
+    <header>
+      <div id="score">
+        <img src="./images/memoryGame/timer.gif" alt="score" id="timerIcon" />
+        <span id="timer">00:00</span>
+        <span id="line"></span>
+        <img src="./images/memoryGame/goldIcon.webp" alt="score" id="gold" />
+        <span id="count">0</span>
+      </div>
+    </header>
+    <!-- Game -->
+    <main>
+      <div id="dashboard">
+        <h1>Memory Game</h1>
+        <div id="win">
+          <span id="alert">You Win !<br />Thanks for you'r time</span>
+          <img src="./images/memoryGame/win.gif" alt="win" />
+        </div>
+        <div id="gameboard">
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="0"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="1"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="2"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="3"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="4"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="5"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="6"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="7"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="8"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="9"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="10"
+            draggable="false"
+          />
+          <img
+            src="./images/memoryGame/Moon.gif"
+            alt="Moon Image"
+            id="11"
+            draggable="false"
+          />
+        </div>
+        <div id="buttonsGame">
+          <input type="button" value="Start" id="start" />
+          <input type="button" value="Stop" id="stop" />
+        </div>
+      </div>
+    </main>
+    <!-- Sound system -->
+    <footer>
+      <div id="soundSystem">
+        <audio
+          src="./sound/worldMap.mp3"
+          id="background"
+          controls
+          loop
+          autoplay
+        ></audio>
+        <audio src="./sound/pop.mp3" controls id="effect"></audio>
+      </div>
+    </footer>
+  </body>
+</html>
