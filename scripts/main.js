@@ -87,8 +87,8 @@ function startGame() {
 
   // make gamebord
   for (let i = 1; i < 7; i++) {
-    borderGame.push("../images/memoryGame/" + i + ".gif");
-    borderGame.push("../images/memoryGame/" + i + ".gif");
+    borderGame.push("./images/memoryGame/" + i + ".gif");
+    borderGame.push("./images/memoryGame/" + i + ".gif");
   }
 
   // Random items
@@ -130,7 +130,7 @@ function exitGame() {
   clearInterval(timerInterval);
   document.querySelectorAll("div#gameboard > img").forEach((img) => {
     img.removeEventListener("click", clickedSystem);
-    img.src = "../images/memoryGame/Moon.gif";
+    img.src = "./images/memoryGame/Moon.gif";
     img.style.borderColor = "#7289da";
     img.style.cursor = "not-allowed";
   });
