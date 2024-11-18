@@ -59,13 +59,13 @@ function clickedSystem() {
     }
     if (!countMoons) {
       audioEffect.pause();
-      audioBackground.src = "../sound/levelComplete.mp3";
+      audioBackground.src = "./sound/levelComplete.mp3";
       popupWin.style.display = "block";
       clearInterval(timerInterval);
       setTimeout(function () {
         exitGame();
         popupWin.style.display = "none";
-        audioBackground.src = "../sound/worldMap.mp3";
+        audioBackground.src = "./sound/worldMap.mp3";
       }, 10000);
     }
   }, 750);
@@ -77,10 +77,10 @@ function startGame() {
   } else {
     start = true;
     if (!audioEffect.src.includes("pop.mp3"))
-      audioEffect.src = "../sound/pop.mp3";
+      audioEffect.src = "./sound/pop.mp3";
     audioEffect.play();
     setTimeout(function () {
-      audioEffect.src = "../sound/connectBubbles.mp3";
+      audioEffect.src = "./sound/connectBubbles.mp3";
       audioEffect.volume = 0.3;
     }, 1000);
   }
