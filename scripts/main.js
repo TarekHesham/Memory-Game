@@ -101,6 +101,7 @@ function startGame() {
     for (let i = 0; i < borderGame.length; i++) {
       imgs[i].src = borderGame[i];
     }
+  audioBackground.play();
   }, 1000);
   setTimeout(function () {
     for (let i = 0; i < borderGame.length; i++) {
@@ -139,7 +140,7 @@ function exitGame() {
 // Disabled right click
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-addEventListener("load", (event) => {
+window.addEventListener("load", (event) => {
   audioBackground.src = "./sound/worldMap.mp3";
   audioBackground.play();
 });
