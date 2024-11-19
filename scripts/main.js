@@ -139,4 +139,4 @@ function exitGame() {
 // Disabled right click
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
-document.onload = () => document.getElementById('background').play();
+window.onload = () => document.getElementById('background').play();
