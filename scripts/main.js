@@ -140,5 +140,6 @@ function exitGame() {
 document.addEventListener("contextmenu", (event) => event.preventDefault());
 
 addEventListener("load", (event) => {
-  document.getElementById('background').play();
+  audioBackground.src = "./sound/worldMap.mp3";
+  audioBackground.play();
 });
